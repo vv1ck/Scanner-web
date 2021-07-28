@@ -1,5 +1,5 @@
 # Scanner-web
-Tool function:
+-Tool function:
 -1 Extract links from the website
 -2 Information about the domain and website
 -3 Check out website ports
