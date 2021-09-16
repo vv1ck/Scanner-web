@@ -13,19 +13,15 @@ print("""
 JR = input('\n[?] Enter the tool number: ')
 sn_ip = input('[?] Enter the website link: ')
 r=requests.session()
-try:
-	webIP = sn_ip.split('.')[1]
+try:webIP = sn_ip.split('.')[1]
 except IndexError:
-	print('[-] Please enter a valid link')
-	print('[-] Example: www.instagram.com')
-	input('')
-	exit()
+	print('[-] Please enter a valid link');print('[-] Example: www.instagram.com');input('');exit()
 try:
 	IPhost = socket.gethostbyname(sn_ip)
 except socket.gaierror:
-	print('[!] The domain name is incorrect, please check it')
-	input('')
-	exit()
+	if JR=='1':pass
+	else:print('[!] The domain name is incorrect, please check it');input('');exit()
+print('\n')
 def PORT_Scanner():
 	print('\n[%] scanner has been started ..')
 	for port in range(1,65325):
@@ -76,7 +72,7 @@ def PORT_Scanner():
 			else:
 					pass
 def page_links():
-	print(r.get(f'https://api.hackertarget.com/pagelinks/?q=www.{webIP}.com').text)
+	print(r.get(f'https://api.hackertarget.com/pagelinks/?q={webIP}.com').text)
 def WEB_Scanner():
 	headers ={
 	'Host': f'{webIP}.com.w3snoop.com',
