@@ -9,7 +9,7 @@ Tool function:
 install in kali linux :
 - git clone https://github.com/vv1ck/Scanner-web.git
 - cd Scanner-web
-- python3 Clean-account.py
+- python3 Scanner-web.py
 -
 By JOKER | <a class="" href="https://www.snapchat.com/add/jokermr5oos4800?">Snapchat 👻</a> | <a class="" href="http://t.me/vv1ck">telegram 🔷</a>
 -
