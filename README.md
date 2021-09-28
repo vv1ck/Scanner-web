@@ -21,7 +21,7 @@ cd Scanner-web
 
 <!--START_SECTION:waka-->
 ```
-python3 Scanner-web.py
+python3 start.py
 ```
 <!--END_SECTION:waka-->
 
